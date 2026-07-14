@@ -1,0 +1,21 @@
+Read the CLAUDE.md file
+
+---
+
+Many symbols and notations in mathematics are used as it ease in Computing. But some are not valid in math but valid in programming languages like: x = x + 2. Similarly some are valid in math but not valid in programming langauges like: x + 2*y = z. So create a task2 for the same. Before creating show me what type of questions that will be created? May be no need of so many MCQs. You are a greate Software Design engineer and Greate teacher.
+
+---
+
+browser internet and find some interesting questions related to these in real time what people really miss between math and computing. and get some good examples and show me I will approve.
+
+---
+
+chained inequaliuty, not now, later in task where I cover comparissions. and caret and other things later. For now just restrict to arthimetic operations and assignment operation
+
+---
+
+No need to bring concepts like syntax error, MATLAB and other software. Ignore what you have searched and just focus on what we first created. Only pick few which does not bring more concepts. for now I just want to show assignment statemnets with expressions in Computing nothing else, slow introduction from math looking same but different meaning.
+
+---
+
+go ahead
