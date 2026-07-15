@@ -1,0 +1,447 @@
+## Task 3: Print Statement Practice
+
+Create **Task 3**, which focuses on understanding the **`print` statement**.
+
+### Print Statement Rules
+
+Variables can contain either:
+- an integer
+- a string
+
+A `print` statement is formed by concatenating a sequence of **strings** and **variables** using the `+` operator.
+
+After the `print` keyword, the expression:
+- can start with either a string or a variable.
+- should alternate between strings and variables as needed to produce the required output.
+
+Students must write the `print` statement exactly so that it produces the specified output.
+
+---
+
+### Example
+
+```text
+a = 2
+b = 3
+sum = a + b
+```
+
+Required output:
+
+```text
+The sum of 2 and 3 is 5.↵
+```
+
+> Use the notebook-style enter symbol (`↵`) to indicate the newline.
+
+Correct print statement:
+
+```text
+print "The sum of " + a + " and " + b + " is " + sum + ".\n"
+```
+
+---
+
+## Learning Objective
+
+Students must clearly understand that:
+
+- Spaces inside strings are part of the output.
+- Missing or extra spaces produce different output.
+- They should carefully place spaces inside quotation marks.
+
+Create plenty of beginner-friendly exercises to reinforce this concept.
+
+---
+
+## Simple Examples
+
+### Example 1
+
+```text
+print "Namasthey"
+```
+
+Output
+
+```text
+Namasthey
+```
+
+---
+
+### Example 2
+
+```text
+print "Murali" + "Krishna"
+```
+
+Output
+
+```text
+MuraliKrishna
+```
+
+---
+
+### Example 3
+
+```text
+print "Murali " + "Krishna"
+```
+
+Output
+
+```text
+Murali Krishna
+```
+
+---
+
+### Example 4
+
+```text
+print "Murali" + " Krishna"
+```
+
+Output
+
+```text
+Murali Krishna
+```
+
+---
+
+### Example 5
+
+```text
+print "Murali " + " Krishna"
+```
+
+Output
+
+```text
+Murali  Krishna
+```
+
+Notice that there are **two spaces** between the words.
+
+---
+
+### Example 6
+
+```text
+age = 19
+print age + "years old."
+```
+
+Output
+
+```text
+19years old.
+```
+
+This output is not properly formatted.
+
+Correct version:
+
+```text
+print age + " years old."
+```
+
+Output
+
+```text
+19 years old.
+```
+
+---
+
+### Example 7
+
+Given:
+
+```text
+cost = 20000
+```
+
+Required output:
+
+```text
+The cost of computer is Rs.20000 more.
+```
+
+Correct solution:
+
+```text
+print "The cost of computer is Rs." + cost + " more."
+```
+
+Incorrect solutions:
+
+```text
+print "The cost of computer is Rs. " + cost + " more."
+```
+
+(extra space after `Rs.`)
+
+```text
+print "The cost of computer is Rs." + cost + "more."
+```
+
+(missing space before `more.`)
+
+---
+
+## Deliverables
+
+Create the following files:
+
+- `worksheet.md`
+- `questions.md`
+- `answers.md`
+
+Now create worksheet, questions and answers md files and their viewers and add in the index page.
+
+---
+
+## Task 3: Print Statement Practice
+
+Create **Task 3**, which focuses on understanding the **`print` statement**.
+
+### Print Statement Rules
+
+Variables can contain either:
+- an integer
+- a string
+
+A `print` statement is formed by concatenating a sequence of **strings** and **variables** using the `+` operator.
+
+After the `print` keyword, the expression:
+- can start with either a string or a variable.
+- should alternate between strings and variables as needed to produce the required output.
+
+Students must write the `print` statement exactly so that it produces the specified output.
+
+---
+
+### Example
+
+```text
+a = 2
+b = 3
+sum = a + b
+```
+
+Required output:
+
+```text
+The sum of 2 and 3 is 5.↵
+```
+
+> Use the notebook-style enter symbol (`↵`) to indicate the newline.
+
+Correct print statement:
+
+```text
+print "The sum of " + a + " and " + b + " is " + sum + ".\n"
+```
+
+---
+
+## Learning Objective
+
+Students must clearly understand that:
+
+- Spaces inside strings are part of the output.
+- Missing or extra spaces produce different output.
+- They should carefully place spaces inside quotation marks.
+
+Create plenty of beginner-friendly exercises to reinforce this concept.
+
+---
+
+## Simple Examples
+
+### Example 1
+
+```text
+print "Namasthey"
+```
+
+Output
+
+```text
+Namasthey
+```
+
+---
+
+### Example 2
+
+```text
+print "Murali" + "Krishna"
+```
+
+Output
+
+```text
+MuraliKrishna
+```
+
+---
+
+### Example 3
+
+```text
+print "Murali " + "Krishna"
+```
+
+Output
+
+```text
+Murali Krishna
+```
+
+---
+
+### Example 4
+
+```text
+print "Murali" + " Krishna"
+```
+
+Output
+
+```text
+Murali Krishna
+```
+
+---
+
+### Example 5
+
+```text
+print "Murali " + " Krishna"
+```
+
+Output
+
+```text
+Murali  Krishna
+```
+
+Notice that there are **two spaces** between the words.
+
+---
+
+### Example 6
+
+```text
+age = 19
+print age + "years old."
+```
+
+Output
+
+```text
+19years old.
+```
+
+This output is not properly formatted.
+
+Correct version:
+
+```text
+print age + " years old."
+```
+
+Output
+
+```text
+19 years old.
+```
+
+---
+
+### Example 7
+
+Given:
+
+```text
+cost = 20000
+```
+
+Required output:
+
+```text
+The cost of computer is Rs.20000 more.
+```
+
+Correct solution:
+
+```text
+print "The cost of computer is Rs." + cost + " more."
+```
+
+Incorrect solutions:
+
+```text
+print "The cost of computer is Rs. " + cost + " more."
+```
+
+(extra space after `Rs.`)
+
+```text
+print "The cost of computer is Rs." + cost + "more."
+```
+
+(missing space before `more.`)
+
+---
+
+## Deliverables
+
+
+Now create worksheet, questions and answers md files and their viewers and add in the index page.
+
+---
+
+2, 3, 4.
+print num1 + ", " + num2 + ", " + num3 + "."  add this type of examples as well.
+
+---
+
+Is there a way to introduce this print statement, without mentioning word 'character' in task3? Just answer I want to discuss, don't do any code changes
+
+---
+
+This feels right to not use the new vocab 'character'. instead of box we can use cells or squares. Again question to discuss not to change the code. can you create a graph paper like image inside the worksheet or questions or answers, one such paper can be used everywhere and text can be over-layed on top of it as the output comes for that specific print statemnt? is it possible?
+
+---
+
+go ahead with option 2 and remove the word character from task3. Also you can use these words in the examples how they fit for smaller outputs. words: om, shiva, namah, shambo, siva...
+
+---
+
+What about the output which comes in multi-lines like for statement: print "Namah\nShiva\n". for this output must come in two lines. Can this be handled in the cells view? just question don't change code
+
+---
+
+add multi-line output examples to task3
+
+---
+
+We are using iteration - 1, 2, 3 and so on. Is there a better word to use for this? just answer don't change code
+
+---
+
+can you find any telugu word or Sanskrit word, which might fit well?
+
+---
+
+What is the word for charanam and pallavi in samskrutham?
+
+---
+
+use Pallavi and Charanam in all work sheets.
