@@ -1,0 +1,5 @@
+Create extra questions related print statement, giving variables with values of int and strings and ask them to write print statement to get an expected output where the same variable value must be used more than once. Give questions where they need to write multiple print statements to acheive rather than single one. Give some tricky questions where they need to be very careful to give the output like output containing multiple sentences and after the fullstop of first sentence there will be a space. use ! also. Make them write output like something like 2 + 3 = 5 here it involves printing the '+' and '=' as part of the string segments. Make them write bigger expressions like 2 X 5 = 10, 20 / 5 = 4, 2 + 3 X 9 = 29, give some extra variables but leave the RHS as blank and make them show the expected output. First show me some examples, once I aprove you can go ahead.
+
+---
+
+1. yes, 2. yes. Build a new extra qustion and their answers, 4 files and 2 links in the main index file
