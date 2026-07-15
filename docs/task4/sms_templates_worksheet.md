@@ -174,7 +174,7 @@ Three things worth saying out loud:
 
 - `FromCity` is printed **three times** and `ToCity` twice — a variable can appear as many times as the message needs (you practised this in the extra questions of Task 3).
 - Inside the brackets the route is `HYD - PUNE` (spaces around the dash), outside it is `HYD-PUNE` (no spaces) — the strings `"-"` and `" - "` are different, and the message proves it.
-- The helpline and website never change, so they live at the end of the template as plain fixed text.
+- The helpline and website never change, so they live at the end of the template as plain fixed text — even though they *look* like data. A big number and a web address tempt the eye, but compare with Charanam 5: Flipkart's order link **varied** per order, so it was a variable; TSRTC's website is the same on every ticket, so it is not. **A piece is not a variable because it looks like data — it is a variable because it varies.**
 
 **Takeaway to say out loud:** "However dense the message, it is the same song — and a variable can sing many times."
 
@@ -206,10 +206,11 @@ If a boundary surprised you, re-read the charanam it comes from.
 
 1. Read the whole message once.
 2. Ask every piece: *would this change for another customer?*
-3. Cut the string exactly where a varying piece begins and ends.
-4. Name each variable by what the value **means** — join words, capital at each word (`BillAmount`).
-5. Punctuation, spaces, `Rs.`, labels like `Ref Id: ` — all stay inside the strings.
-6. A variable may appear more than once; print it again wherever it is needed.
+3. A piece is not a variable because it **looks like data** — only because it **varies**. (Phone numbers and links can be fixed; the TSRTC helpline is on every ticket.)
+4. Cut the string exactly where a varying piece begins and ends.
+5. Name each variable by what the value **means** — join words, capital at each word (`BillAmount`).
+6. Punctuation, spaces, `Rs.`, labels like `Ref Id: ` — all stay inside the strings.
+7. A variable may appear more than once; print it again wherever it is needed.
 
 | Piece of SMS | Fixed or varying? | Where it goes |
 |---|---|---|
