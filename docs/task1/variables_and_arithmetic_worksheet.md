@@ -4,14 +4,16 @@
 
 **You need:** a notebook, a pencil, and the one golden rule below.
 
-> **The golden rule of `=`**
+This sheet is written like a song: one **pallavi** (పల్లవి) — the rule we return to after every verse — and a series of **charanams** (చరణాలు) — verses that each add one new idea.
+
+> **Pallavi — the golden rule of `=`**
 > In code, `=` is not the "equals" of maths. It is an instruction:
 > **first compute the right side using the current values, then store the result into the name on the left.**
 > Whatever the name held before is thrown away.
 
 ---
 
-## Iteration 1 — A name holds a value
+## Charanam 1 — A name holds a value
 
 **a. What we set up**
 
@@ -38,7 +40,7 @@ There is now a name `a`, and it holds `5`. That is the entire program. A **varia
 
 ---
 
-## Iteration 2 — A new value replaces the old one
+## Charanam 2 — A new value replaces the old one
 
 **a. What we set up**
 
@@ -63,7 +65,7 @@ After line 2, the `5` is gone — completely. A box holds **one** value; storing
 
 ---
 
-## Iteration 3 — A variable can use its own value
+## Charanam 3 — A variable can use its own value
 
 **a. What we set up**
 
@@ -88,7 +90,7 @@ a: 5 → 8
 
 ---
 
-## Iteration 4 — The same variable, updated again and again
+## Charanam 4 — The same variable, updated again and again
 
 **a. What we set up**
 
@@ -127,7 +129,7 @@ Each line only sees the value the previous line left behind. This state table is
 
 ---
 
-## Iteration 5 — Division keeps only the whole part
+## Charanam 5 — Division keeps only the whole part
 
 **a. What we set up**
 
@@ -155,7 +157,7 @@ Check: `5 * 3 + 2 = 17`. The pair `/` and `%` split a number perfectly.
 
 ---
 
-## Iteration 6 — A second variable
+## Charanam 6 — A second variable
 
 **a. What we set up**
 
@@ -189,7 +191,7 @@ Line 2 **reads** `a` but does not change it — only the name on the **left** of
 
 ---
 
-## Iteration 7 — Three variables and operator order
+## Charanam 7 — Three variables and operator order
 
 **a. What we set up**
 
@@ -247,7 +249,7 @@ a = c / 3
 
 **Check yourself:** P1 — `a: 3 → 7 → 14`. P2 — `a: 20 → 6 → 2`. P3 — `c = 6`, then `a = 2`, `b` stays `2`.
 
-If any line surprised you, re-read the iteration it comes from — every practice line uses exactly one takeaway.
+If any line surprised you, re-read the charanam it comes from — every practice line uses exactly one takeaway.
 
 ---
 

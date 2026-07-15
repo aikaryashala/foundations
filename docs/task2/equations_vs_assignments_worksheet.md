@@ -4,14 +4,16 @@
 
 **You need:** a notebook, a pencil, and the state-table method from Task 1.
 
-> **The golden rule of this sheet**
+This sheet is written like a song: one **pallavi** (పల్లవి) — the rule we return to after every verse — and a series of **charanams** (చరణాలు) — verses that each add one new idea.
+
+> **Pallavi — the golden rule of this sheet**
 > In maths, `=` states a **fact**: "the two sides are equal."
 > In computing, `=` gives an **instruction**: "compute the right side with the current values, then store the result into the name on the left."
 > So in computing, read `=` as **"becomes"** — never as "equals".
 
 ---
 
-## Iteration 1 — One line, two readings
+## Charanam 1 — One line, two readings
 
 **a. What we set up**
 
@@ -51,7 +53,7 @@ In maths the line does nothing — it only tells you a fact that is true. In com
 
 ---
 
-## Iteration 2 — The left side must be one box name
+## Charanam 2 — The left side must be one box name
 
 **a. What we set up**
 
@@ -76,7 +78,7 @@ For the same reason `5 = a` is not allowed: `5` is not a box. Maths can write bo
 
 ---
 
-## Iteration 3 — `a = a + 2`: an impossible fact, an everyday instruction
+## Charanam 3 — `a = a + 2`: an impossible fact, an everyday instruction
 
 **a. What we set up**
 
@@ -103,7 +105,7 @@ You traced lines like this all through Task 1. Now you know why they look strang
 
 ---
 
-## Iteration 4 — Every multiplication is written
+## Charanam 4 — Every multiplication is written
 
 **a. What we set up**
 
@@ -162,7 +164,7 @@ b = b - a
 
 **Check yourself:** P1 — allowed; not allowed (`b = a + 4`); allowed; not allowed (`c = 2 * b`); not allowed (`c = 7`). P2 — `a: 4 → 6`, then `b: 12 → 6`.
 
-If any line surprised you, re-read the iteration it comes from.
+If any line surprised you, re-read the charanam it comes from.
 
 ---
 

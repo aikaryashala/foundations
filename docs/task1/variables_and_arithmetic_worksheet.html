@@ -214,6 +214,22 @@
     font-family:var(--mono); padding:0 10px; font-size:.9rem;
   }
 
+  /* graph-paper output cells (```cells blocks) */
+  .cells{margin:1.1em 0; overflow-x:auto; padding-bottom:4px;}
+  .cellrow{display:flex; width:max-content; margin-top:8px;}
+  .cellrow:first-child{margin-top:0;}
+  .cell{
+    flex:0 0 34px; width:34px; height:40px;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--mono); font-size:.95rem; color:var(--ink);
+    background:#fff; border:1px solid #C9D6EA; border-left:0;
+  }
+  .cellrow .cell:first-child{border-left:1px solid #C9D6EA; border-radius:8px 0 0 8px;}
+  .cellrow .cell:last-child{border-radius:0 8px 8px 0;}
+  .cellrow .cell:only-child{border-radius:8px;}
+  .cell--space{background:#F6F9FE; color:#B9C7DB;}
+  .cell--enter{background:var(--accent-soft); color:var(--accent); font-size:.85rem;}
+
   /* ---------- status / error ---------- */
   .status{
     max-width:880px; margin:0 auto;
@@ -309,6 +325,24 @@
           if (lang && window.hljs && hljs.getLanguage(lang)){
             hljs.highlightElement(block);
           }
+        });
+
+        // Upgrade ```cells blocks into graph-paper cell rows (one symbol per cell).
+        contentEl.querySelectorAll('pre code.language-cells').forEach(block => {
+          const wrap = document.createElement('div');
+          wrap.className = 'cells';
+          block.textContent.replace(/\n$/, '').split('\n').forEach(line => {
+            const row = document.createElement('div');
+            row.className = 'cellrow';
+            Array.from(line).forEach(ch => {
+              const cell = document.createElement('span');
+              cell.className = 'cell' + (ch === ' ' ? ' cell--space' : ch === '\u21b5' ? ' cell--enter' : '');
+              cell.textContent = ch === ' ' ? '\u00b7' : ch;
+              row.appendChild(cell);
+            });
+            wrap.appendChild(row);
+          });
+          block.closest('pre').replaceWith(wrap);
         });
 
         document.title = (contentEl.querySelector('h1')?.textContent || document.title).trim();

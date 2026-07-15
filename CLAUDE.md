@@ -14,7 +14,7 @@ project_tasks/
 └── docs/
     ├── index.html                  ← site root; one line per task
     └── taskN/
-        ├── <topic>_worksheet.md    ← the lesson, taught in small iterations
+        ├── <topic>_worksheet.md    ← the lesson, taught in small charanams (verses)
         ├── <topic>_worksheet.html  ← viewer
         ├── <topic>_questions.md    ← question bank (questions ONLY — never answers)
         ├── <topic>_questions.html  ← viewer
@@ -41,8 +41,9 @@ python3 -m http.server 8000
   itself (e.g. integers only, no data types, max 3 variables), the restriction shapes the
   examples silently. Do not announce it in the worksheet — students should just see
   simple, consistent code.
-- **One new idea per iteration.** A worksheet is a sequence of tiny iterations, each
-  adding exactly one concept on top of the previous one.
+- **One new idea per charanam.** A worksheet is structured like a Carnatic song: a
+  **pallavi** (the golden rule, the refrain every section returns to) followed by tiny
+  **charanams** (verses), each adding exactly one concept on top of the previous one.
 - **Predict before reveal.** Students write their prediction on paper first; the
   observation then confirms or corrects it.
 - **The trip-ups are the curriculum.** Integer division keeping only the quotient,
@@ -70,9 +71,11 @@ python3 -m http.server 8000
 
 1. `# Title` — plain-language, states the skill (e.g. "— Trace the Values").
 2. Short goal paragraph + what the student needs (notebook, pencil).
-3. A "golden rule" the whole sheet hangs on, stated up front as a blockquote.
-4. Iterations separated by `---`, each structured as:
-   - `## Iteration N — <one-line idea>`
+3. A "golden rule" the whole sheet hangs on, stated up front as a blockquote titled
+   `**Pallavi — the golden rule of <x>**`, preceded by one line explaining the
+   pallavi/charanam song structure.
+4. Charanams separated by `---`, each structured as:
+   - `## Charanam N — <one-line idea>`
    - `**a. What we set up**` — the snippet or situation
    - `**b. Task**` — what the student does on paper
    - `**c. Observation (what you should find)**` — the expected result, explained
@@ -110,6 +113,18 @@ error fallback). To create a new viewer, copy any existing one and change **only
 | localhost URL in error text | matching `.html` name |〃 | 〃 |
 
 Everything else (CSS, JS) stays byte-identical across viewers.
+
+### Output cells (```` ```cells ```` blocks)
+
+Viewers upgrade fenced blocks tagged `cells` into graph-paper cell rows — one symbol
+per cell, spaces as dotted empty cells, a literal `↵` as an accented Enter cell. Use
+them **only** for print outputs, never for code. Write newlines as a literal `↵` in
+the md (not `\n`). Multi-line outputs: one md line per output row; every row except
+possibly the last ends with `↵`, and `↵` only ever appears at the end of a row (a row
+containing only `↵` is an empty output line). Keep outputs short: a row scrolls
+sideways rather than wrap.
+Vocabulary rule (task3 onward): outputs are checked "cell by cell" on paper — the
+word "character" is deliberately not taught yet.
 
 ## index.html format
 
