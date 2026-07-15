@@ -99,20 +99,31 @@ python3 -m http.server 8000
 
 ## Viewer HTML template
 
-All `.html` files share one self-contained template (marked.js + highlight.js from CDN,
-graph-paper background, sticky topbar with stage chips, dark code blocks, `file://`
-error fallback). To create a new viewer, copy any existing one and change **only**:
+All shared styling and logic live in common assets, loaded by every viewer:
+
+```
+docs/assets/viewer.css   ← all CSS (graph-paper bg, topbar, md styles, cells & sms rendering)
+docs/assets/viewer.js    ← fetch + marked/highlight.js render logic, file:// error fallback
+```
+
+Each task viewer is a thin shell: fonts + highlight theme + `../assets/viewer.css`
+links in the head; the topbar (brand + chips); the status/content skeleton; then
+marked + highlight.js + `../assets/viewer.js` scripts. The viewer loads the `.md`
+**derived from its own filename** (`x.html` → `x.md`), so the two must share their
+basename. To create a new viewer, copy any existing one and change **only**:
 
 | Spot | Worksheet | Questions | Answers |
 |---|---|---|---|
 | `<title>` | task title | `<Topic> — Question Bank` | `<Topic> — Answers with Reasoning` |
 | `.brand` text | `<Topic> · Lab` | `<Topic> · Question Bank` | `<Topic> · Answer Key` |
-| topbar chips | concept stages of the sheet | `MCQ › Fill in the blanks › Traces` | same as questions |
-| `hr::after` content | `›` | `?` | `✓` |
-| `const MD_FILE` | `<topic>_worksheet.md` | `<topic>_questions.md` | `<topic>_answers.md` |
-| localhost URL in error text | matching `.html` name |〃 | 〃 |
+| topbar chips | concept stages of the sheet | parts of the bank | same as questions |
+| `<body data-kind>` | `worksheet` | `questions` | `answers` |
+| status text | `Rendering worksheet…` | `Rendering questions…` | `Rendering answers…` |
 
-Everything else (CSS, JS) stays byte-identical across viewers.
+`data-kind` drives the per-kind styling in the shared CSS (`hr::after` glyph
+`›` / `?` / `✓`, worksheet table columns) and the error-message wording. New template
+features (like cells/sms blocks) go into `docs/assets/` once — never into individual
+viewers.
 
 ### Output cells (```` ```cells ```` blocks)
 
@@ -125,6 +136,14 @@ containing only `↵` is an empty output line). Keep outputs short: a row scroll
 sideways rather than wrap.
 Vocabulary rule (task3 onward): outputs are checked "cell by cell" on paper — the
 word "character" is deliberately not taught yet.
+
+### SMS bubbles (```` ```sms ```` blocks)
+
+Viewers upgrade fenced blocks tagged `sms` into phone-style message bubbles — soft
+green, rounded, labelled "sms", and **word-wrapped** like a real phone screen. Use
+them only for SMS/message text the customer receives; print statements and programs
+stay in plain (dark, one-line, scrolling) code blocks so a statement always reads as
+one line.
 
 ## index.html format
 
@@ -142,7 +161,7 @@ One `<li>` per task — worksheet link, then small `[Questions]` and `[ans]` lin
 1. `mkdir docs/taskN`; pick the snake_case `<topic>`.
 2. Write `<topic>_worksheet.md` (format above), `<topic>_questions.md`,
    `<topic>_answers.md` — re-verify all arithmetic by hand.
-3. Copy the three viewer HTMLs from an existing task; update the six spots in the
+3. Copy the three viewer HTMLs from an existing task; update the spots in the
    table above for each.
 4. Add the task's `<li>` line to `docs/index.html`.
 5. Serve locally and click all three links; confirm each page renders and the
