@@ -1,0 +1,34 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "982b69195826",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 10,
+  "files_touched": [
+    "CLAUDE.md",
+    "docs/task1/variables_and_arithmetic_answers.html",
+    "docs/task1/variables_and_arithmetic_questions.html",
+    "docs/task1/variables_and_arithmetic_worksheet.html",
+    "docs/task1/variables_and_arithmetic_worksheet.md",
+    "docs/task2/equations_vs_assignments_answers.html",
+    "docs/task2/equations_vs_assignments_questions.html",
+    "docs/task2/equations_vs_assignments_worksheet.html",
+    "docs/task2/equations_vs_assignments_worksheet.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/98/2b69195826/0/metadata.json",
+      "transcript": "/98/2b69195826/0/full.jsonl",
+      "compact_transcript": "/98/2b69195826/0/transcript.jsonl",
+      "content_hash": "/98/2b69195826/0/content_hash.txt",
+      "prompt": "/98/2b69195826/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 2306,
+    "cache_creation_tokens": 224305,
+    "cache_read_tokens": 7189736,
+    "output_tokens": 97162,
+    "api_call_count": 74
+  }
+}
