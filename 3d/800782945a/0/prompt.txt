@@ -1,0 +1,47 @@
+Create task4/ which involves sms received by customers and a print statement must be written by identifing which is varing and use appropriate variable name with the exact format that is described in these examples.
+
+---
+A customer received this sms:
+```
+Your payment of Rs.889.00 is successful on BSNL Portal. Ref Id: FCDR2510166695343.
+```
+
+The print statement that generated the above SMS is as follows:
+```
+print "Your payment of Rs." + BillAmount + " is successful on BSNL Portal. Ref Id: " + ReferenceId + "."
+```
+---
+A customer received this sms:
+```
+We have received your order OD407321268625838000 amounting to Rs.4166 and it is being processed. You can expect delivery by Fri 14, Feb 2020. You can manage your order at http://fkrt.it/zzBo1ukluN. Thank you!
+```
+
+The print statement that generated the above SMS is as follows:
+```
+print "We have received your order " + OrderId + " amounting to Rs." + Amount + " and it is being processed. You can expect delivery by " + DeliveryDate + ". You can manage your order at " + OrderLink + ". Thank you!"
+```
+---
+
+Now start with simple SMS containing two variables and move on to the complex SMS like train ticket and bus tickets
+
+example bus ticket SMS:
+```
+TKT NO 78415325,NAME:VINODKUMAR P,HYD-PUNE,SRVC NO:3367(HYD - PUNE) Seats:U15(M)FARE:1902,DOJ:16-Jun-25 05:40PM,HYD-17:40,UID:0032.Helpline Ph:08662570005.www.tsrtconline.in
+```
+Create worksheet, questions, answers and add in index.html
+
+---
+
+each sms is comming in a single line, is it better to use word wrap?
+
+---
+
+yes implement the bubble version for sms
+
+---
+
+why did you touch the files in task1,2,3 folders for bubble sms view?
+
+---
+
+can we move the css to a common location and use it in every task, than replicating it every where?

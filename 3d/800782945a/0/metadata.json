@@ -1,0 +1,42 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "3d800782945a",
+  "session_id": "f1ecdbe6-3d20-4540-b782-d49ee66e0f4d",
+  "strategy": "manual-commit",
+  "created_at": "2026-07-15T11:03:50.466073Z",
+  "branch": "main",
+  "checkpoints_count": 5,
+  "save_step_count": 1,
+  "files_touched": [
+    "docs/task4/sms_templates_questions.html",
+    "docs/task4/sms_templates_questions.md",
+    "docs/task4/sms_templates_worksheet.html",
+    "docs/task4/sms_templates_worksheet.md"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-fable-5",
+  "turn_id": "4b49107d0892",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 2357,
+    "cache_creation_tokens": 599015,
+    "cache_read_tokens": 12358932,
+    "output_tokens": 154871,
+    "api_call_count": 102
+  },
+  "session_metrics": {
+    "turn_count": 22
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-07-15T11:03:50.40255Z",
+    "agent_lines": 429,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 429,
+    "total_lines_changed": 429,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}
