@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "8c830f5f5b63",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 10,
+  "files_touched": [
+    "docs/index.html",
+    "docs/task3/print_statement_questions.html",
+    "docs/task3/print_statement_questions.md",
+    "docs/task3/print_statement_worksheet.html",
+    "docs/task3/print_statement_worksheet.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/8c/830f5f5b63/0/metadata.json",
+      "transcript": "/8c/830f5f5b63/0/full.jsonl",
+      "compact_transcript": "/8c/830f5f5b63/0/transcript.jsonl",
+      "content_hash": "/8c/830f5f5b63/0/content_hash.txt",
+      "prompt": "/8c/830f5f5b63/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 96,
+    "cache_creation_tokens": 163898,
+    "cache_read_tokens": 6108593,
+    "output_tokens": 66855,
+    "api_call_count": 51
+  }
+}
