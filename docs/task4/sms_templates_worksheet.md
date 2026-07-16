@@ -90,7 +90,14 @@ For each value, say which name tells a stranger *what the value means* — witho
 
 **c. Observation (what you should find)**
 
-`Otp`, `BillAmount`, `JourneyDate` win. A good variable name answers "what is this value *for*?" — not "what does it look like?". When a name needs two or more words, join them and start each word with a capital letter: `BillAmount`, `ReferenceId`, `DeliveryDate`. No spaces inside a name — a name is one word.
+`Otp`, `BillAmount`, `JourneyDate` win. A good variable name answers "what is this value *for*?" — not "what does it look like?". When a name needs two or more words, join them and start each word with a capital letter — a name must be **one word, no spaces**:
+
+```
+Booking Date     → not allowed — two words is not a name
+BookingDate      → correct
+bill amount      → not allowed
+BillAmount       → correct
+```
 
 **Takeaway to say out loud:** "Name the variable by what the value means, joining words with capitals."
 
@@ -208,7 +215,7 @@ If a boundary surprised you, re-read the charanam it comes from.
 2. Ask every piece: *would this change for another customer?*
 3. A piece is not a variable because it **looks like data** — only because it **varies**. (Phone numbers and links can be fixed; the TSRTC helpline is on every ticket.)
 4. Cut the string exactly where a varying piece begins and ends.
-5. Name each variable by what the value **means** — join words, capital at each word (`BillAmount`).
+5. Name each variable by what the value **means** — one word only, capital at each joined word (`BookingDate`, never `Booking Date`).
 6. Punctuation, spaces, `Rs.`, labels like `Ref Id: ` — all stay inside the strings.
 7. A variable may appear more than once; print it again wherever it is needed.
 
