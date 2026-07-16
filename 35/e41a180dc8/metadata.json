@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "35e41a180dc8",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/task4/sms_templates_answers.html",
+    "docs/task4/sms_templates_answers.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/35/e41a180dc8/0/metadata.json",
+      "transcript": "/35/e41a180dc8/0/full.jsonl",
+      "compact_transcript": "/35/e41a180dc8/0/transcript.jsonl",
+      "content_hash": "/35/e41a180dc8/0/content_hash.txt",
+      "prompt": "/35/e41a180dc8/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 2372,
+    "cache_creation_tokens": 603262,
+    "cache_read_tokens": 14214273,
+    "output_tokens": 159808,
+    "api_call_count": 110
+  }
+}
