@@ -137,6 +137,24 @@ sideways rather than wrap.
 Vocabulary rule (task3 onward): outputs are checked "cell by cell" on paper — the
 word "character" is deliberately not taught yet.
 
+### Graph sheets (```` ```graph ```` blocks)
+
+Viewers upgrade fenced blocks tagged `graph` into an SVG coordinate sheet with a
+fixed **−10..10 grid on both axes** (unit gridlines, numbered every 2). One drawing
+command per line; coordinates are ASCII numbers (decimals allowed) in x y order:
+
+```
+dots x1 y1 x2 y2 …          ← ink-dark points at each pair
+line x1 y1 x2 y2 [… | label] ← straight segment(s); extend endpoints to the sheet edge
+curve x1 y1 x2 y2 [… | label] ← smooth curve through the pairs (plot every table point)
+```
+
+An optional ` | label` after any command writes that text near the command's last
+point. Lines/curves are coloured in order of appearance (blue, amber, green, …), so
+several rules can share one sheet. Use them for showing the expected picture of an
+equation (task0-style plotting) — never for code, and keep every coordinate inside
+−10..10.
+
 ### SMS bubbles (```` ```sms ```` blocks)
 
 Viewers upgrade fenced blocks tagged `sms` into phone-style message bubbles — soft

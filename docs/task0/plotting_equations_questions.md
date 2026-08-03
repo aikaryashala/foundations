@@ -136,7 +136,12 @@ Copy each sentence and fill the blank.
 
 # Part C — Draw the Graph
 
-For each question: copy and complete the table, write the points in (x, y) form, plot them on a graph page, join them (ruler or freehand — decide!), and write one line saying **straight line or curve**, with its direction or shape.
+For each question, draw a **fresh graph sheet** in your notebook first: x-axis from **−10 to 10**, y-axis from **−10 to 10**, origin in the middle. Then:
+
+1. copy and complete the table — the fed values always run from **−3 to 3**;
+2. write the points in (x, y) form — x first, always;
+3. plot the points on the sheet and join them (ruler or freehand — decide!);
+4. write one line saying **straight line or curve**, with its direction or shape.
 
 **C1.** y = x + 3
 
@@ -146,23 +151,23 @@ For each question: copy and complete the table, write the points in (x, y) form,
 
 **C2.** y = 2x − 1
 
-| x | −2 | −1 | 0 | 1 | 2 | 3 |
-|---|---|---|---|---|---|---|
-| y |  |  |  |  |  |  |
+| x | −3 | −2 | −1 | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|---|---|---|
+| y |  |  |  |  |  |  |  |
 
-**C3.** On one graph page draw both: y = 5 and x = 2. Describe each line in one word, and write the address of their crossing point.
+**C3.** On one graph sheet draw both: y = 5 and x = 2. Describe each line in one word, and write the address of their crossing point.
 
 **C4.** x + y = 5
 
-| x | 0 | 1 | 2 | 3 | 4 | 5 |
-|---|---|---|---|---|---|---|
-| y |  |  |  |  |  |  |
+| x | −3 | −2 | −1 | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|---|---|---|
+| y |  |  |  |  |  |  |  |
 
 **C5.** x = 2y + 1 — careful which letter you feed!
 
-| y | −2 | −1 | 0 | 1 | 2 |
-|---|---|---|---|---|---|
-| x |  |  |  |  |  |
+| y | −3 | −2 | −1 | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|---|---|---|
+| x |  |  |  |  |  |  |  |
 
 **C6.** y = x × x
 
@@ -172,9 +177,9 @@ For each question: copy and complete the table, write the points in (x, y) form,
 
 **C7.** x = y × y
 
-| y | −2 | −1 | 0 | 1 | 2 |
-|---|---|---|---|---|---|
-| x |  |  |  |  |  |
+| y | −3 | −2 | −1 | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|---|---|---|
+| x |  |  |  |  |  |  |  |
 
 **C8.** Without drawing anything, sort these rules into two lists — **straight line** and **curve** — and give a one-line reason for each:
 

@@ -24,18 +24,12 @@ On a graph page, draw two lines that cross:
 
 The crossing point is the **origin**. Its address is (0, 0). Number the lines outward from it: to the right and upward the numbers grow 1, 2, 3, …; to the left and downward they go −1, −2, −3, …
 
+In this task every graph sheet runs from **−10 to 10** on both axes — draw yours the same way, with the origin in the middle.
+
 Every point on the page now has an **address** written as (x, y): from the origin, walk **x** steps across, then climb **y** steps up. The point (3, 2) looks like this:
 
-```
-        y
-      4 |
-      3 |
-      2 |        ● (3, 2)
-      1 |
---+--+--+--+--+--+--+--  x
- -2 -1  0  1  2  3  4
-     -1 |
-     -2 |
+```graph
+dots 3 2 | (3, 2)
 ```
 
 A minus in the address just reverses the walk: (−2, 1) means 2 steps **left**, then 1 up. (1, −2) means 1 step right, then 2 **down**.
@@ -47,6 +41,16 @@ On one graph page, plot and label these points:
 (3, 2), (2, 3), (0, 0), (−2, 1), (1, −2), (0, 3), (3, 0)
 
 **c. Observation (what you should find)**
+
+```graph
+dots 3 2 | (3, 2)
+dots 2 3 | (2, 3)
+dots 0 0 | (0, 0)
+dots -2 1 | (−2, 1)
+dots 1 -2 | (1, −2)
+dots 0 3 | (0, 3)
+dots 3 0 | (3, 0)
+```
 
 - (3, 2) and (2, 3) land in **different places**. The order inside the brackets matters: first the across-walk, then the up-climb.
 - (0, 3) sits **on the y-axis** (no across-walk at all), and (3, 0) sits **on the x-axis** (no climb).
@@ -76,7 +80,12 @@ Copy the table into your notebook. Plot all 7 points: (−3, −3), (−2, −2)
 
 **c. Observation (what you should find)**
 
-All 7 points sit on **one straight edge of the ruler**. Join them: this is the **line** of y = x. It passes through the origin and climbs one step up for every step right. And it does not stop at your 7 points — the pair (10, 10) is also true, and so is every pair in between. A line is **all** the true pairs at once.
+```graph
+line -10 -10 10 10 | y = x
+dots -3 -3 -2 -2 -1 -1 0 0 1 1 2 2 3 3
+```
+
+All 7 points sit on **one straight edge of the ruler**. Join them: this is the **line** of y = x. It passes through the origin and climbs one step up for every step right. And it does not stop at your 7 points — the pair (10, 10) is also true, and so is every pair in between. A line is **all** the true pairs at once — that is why the drawn line runs right across the sheet, past your dots on both sides.
 
 **Takeaway to say out loud:** "Choose x, compute y, plot the pair — the rule draws itself."
 
@@ -99,6 +108,12 @@ y = x + 2 — "y is 2 more than x."
 Plot these 7 points **on the same page** as Charanam 2's line. Join them with the ruler.
 
 **c. Observation (what you should find)**
+
+```graph
+line -10 -10 10 10 | y = x
+line -10 -8 8 10 | y = x + 2
+dots -3 -1 -2 0 -1 1 0 2 1 3 2 4 3 5
+```
 
 Another straight line — and every one of its points floats **exactly 2 above** the y = x line. The two lines run side by side forever with the same gap: they are **parallel**. They never meet, because y can never be both "x" and "x + 2" at the same time.
 
@@ -128,6 +143,12 @@ Plot both rules on one page. Then answer on paper: at which point do the two lin
 
 **c. Observation (what you should find)**
 
+```graph
+line -10 4 10 4 | y = 4
+line 4 -10 4 10 | x = 4
+dots 4 4 | (4, 4)
+```
+
 - y = 4 is a **flat, horizontal** line, 4 steps above the x-axis.
 - x = 4 is a **standing, vertical** line, 4 steps to the right of the y-axis.
 - They cross where **both** rules are true at once: at (4, 4).
@@ -154,6 +175,11 @@ Check three of the pairs by adding (does −1 + 5 make 4?). Then plot all 7 poin
 
 **c. Observation (what you should find)**
 
+```graph
+line -6 10 10 -6 | x + y = 4
+dots -1 5 0 4 1 3 2 2 3 1 4 0 5 -1
+```
+
 A straight line again — but this one goes **downhill**: each step right costs one step down, because whatever x gains, y must give up to keep the sum at 4. It cuts the y-axis at (0, 4) and the x-axis at (4, 0).
 
 **Takeaway to say out loud:** "Any pair that makes the rule true is on the picture — whatever shape the rule is written in."
@@ -176,6 +202,11 @@ Plot the 5 points and join them. Then, with your pencil on any point of the line
 
 **c. Observation (what you should find)**
 
+```graph
+line -6.5 -10 3.5 10 | y = 2x + 3
+dots -2 -1 -1 1 0 3 1 5 2 7
+```
+
 A straight line, but **steeper** than y = x: every 1 step right needs **2 steps up**. That 2 is exactly the number multiplying x. The `+ 3` tells you where the line cuts the y-axis: at (0, 3).
 
 **Takeaway to say out loud:** "The number multiplying x is the climb for each step right."
@@ -188,17 +219,22 @@ A straight line, but **steeper** than y = x: every 1 step right needs **2 steps 
 
 x = 3y + 2 — this time the rule **computes x from y**. So do not choose x first — choose the letter that sits **inside** the arithmetic, y, and let the rule produce x:
 
-| y | −1 | 0 | 1 | 2 |
-|---|---|---|---|---|
-| x | −1 | 2 | 5 | 8 |
+| y | −2 | −1 | 0 | 1 | 2 |
+|---|---|---|---|---|---|
+| x | −4 | −1 | 2 | 5 | 8 |
 
-Careful when plotting: the address is still written (x, y). The table's columns give the points (−1, −1), (2, 0), (5, 1), (8, 2).
+Careful when plotting: the address is still written (x, y). The table's columns give the points (−4, −2), (−1, −1), (2, 0), (5, 1), (8, 2).
 
 **b. Task**
 
-Plot the 4 points and lay the ruler. Then check the step pattern: 1 step up costs how many steps right?
+Plot the 5 points and lay the ruler. Then check the step pattern: 1 step up costs how many steps right?
 
 **c. Observation (what you should find)**
+
+```graph
+line -10 -4 10 2.667 | x = 3y + 2
+dots -4 -2 -1 -1 2 0 5 1 8 2
+```
 
 A straight line again — a **gentle** one this time: 3 steps right for every 1 step up (the 3 that multiplies y). Choosing y first is not a trick; it is just the pallavi being practical — feed the rule the letter it wants, collect the other.
 
@@ -224,6 +260,11 @@ Plot all 7 points. Try the ruler: can one straight edge touch (1, 1), (2, 4) and
 
 **c. Observation (what you should find)**
 
+```graph
+curve -3 9 -2 4 -1 1 0 0 1 1 2 4 3 9 | y = x × x
+dots -3 9 -2 4 -1 1 0 0 1 1 2 4 3 9
+```
+
 The ruler fails — no straight edge holds these points. Joined smoothly, they form a **U-shaped curve**: falling to its lowest point (0, 0), then rising again, perfectly symmetric — x = 3 and x = −3 give the same y. The moment a rule multiplies **letter by letter**, the picture bends.
 
 **Takeaway to say out loud:** "Letter times letter bends the picture."
@@ -248,6 +289,11 @@ Plot the 5 points and join them smoothly. Which point is the "tip" of the shape?
 
 **c. Observation (what you should find)**
 
+```graph
+curve 6 -2 3 -1 2 0 3 1 6 2 | x = y × y + 2
+dots 6 -2 3 -1 2 0 3 1 6 2
+```
+
 The same U — but **lying on its side**, opening to the right, with its tip at (2, 0). It never reaches left of x = 2, because y × y is never negative, so x is never less than 2. And x = 3 happens **twice** — at y = 1 and at y = −1.
 
 **Takeaway to say out loud:** "Same table method, whatever the rule — the shape is the rule's own signature."
@@ -267,12 +313,48 @@ For each rule: build the table, plot, join, and say whether it is a straight lin
 
 **Final states for self-checking:**
 
-1. y: −3, −2, −1, 0, 1, 2 — a straight line through (1, 0), climbing 1 up per 1 right.
-2. A horizontal line and a vertical line, crossing at (−2, 3).
-3. y: 6, 5, 4, 3, 2, 1, 0 — a straight downhill line from (0, 6) to (6, 0).
-4. y: −3, −1, 1, 3, 5 — a straight line, 2 up per 1 right, cutting the y-axis at (0, −1).
-5. x: −3, −1, 1, 3, 5 — points (−3, −2), (−1, −1), (1, 0), (3, 1), (5, 2); a straight line, 2 right per 1 up.
-6. y: 5, 2, 1, 2, 5 — a U-shaped curve with its lowest point at (0, 1); never below it.
+**1.** y: −3, −2, −1, 0, 1, 2 — a straight line through (1, 0), climbing 1 up per 1 right.
+
+```graph
+line -9 -10 10 9 | y = x − 1
+dots -2 -3 -1 -2 0 -1 1 0 2 1 3 2
+```
+
+**2.** A horizontal line and a vertical line, crossing at (−2, 3).
+
+```graph
+line -10 3 10 3 | y = 3
+line -2 -10 -2 10 | x = −2
+dots -2 3 | (−2, 3)
+```
+
+**3.** y: 6, 5, 4, 3, 2, 1, 0 — a straight downhill line from (0, 6) to (6, 0).
+
+```graph
+line -4 10 10 -4 | x + y = 6
+dots 0 6 1 5 2 4 3 3 4 2 5 1 6 0
+```
+
+**4.** y: −3, −1, 1, 3, 5 — a straight line, 2 up per 1 right, cutting the y-axis at (0, −1).
+
+```graph
+line -4.5 -10 5.5 10 | y = 2x − 1
+dots -1 -3 0 -1 1 1 2 3 3 5
+```
+
+**5.** x: −3, −1, 1, 3, 5 — points (−3, −2), (−1, −1), (1, 0), (3, 1), (5, 2); a straight line, 2 right per 1 up.
+
+```graph
+line -10 -5.5 10 4.5 | x = 2y + 1
+dots -3 -2 -1 -1 1 0 3 1 5 2
+```
+
+**6.** y: 5, 2, 1, 2, 5 — a U-shaped curve with its lowest point at (0, 1); never below it.
+
+```graph
+curve -3 10 -2 5 -1 2 0 1 1 2 2 5 3 10 | y = x × x + 1
+dots -2 5 -1 2 0 1 1 2 2 5
+```
 
 ---
 
