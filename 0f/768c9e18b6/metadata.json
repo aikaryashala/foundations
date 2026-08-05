@@ -1,0 +1,32 @@
+{
+  "cli_version": "0.9.0",
+  "checkpoint_id": "0f768c9e18b6",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/index.html",
+    "docs/task5/git_and_github_pages_answers.html",
+    "docs/task5/git_and_github_pages_answers.md",
+    "docs/task5/git_and_github_pages_questions.html",
+    "docs/task5/git_and_github_pages_questions.md",
+    "docs/task5/git_and_github_pages_worksheet.html",
+    "docs/task5/git_and_github_pages_worksheet.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0f/768c9e18b6/0/metadata.json",
+      "transcript": "/0f/768c9e18b6/0/full.jsonl",
+      "compact_transcript": "/0f/768c9e18b6/0/transcript.jsonl",
+      "content_hash": "/0f/768c9e18b6/0/content_hash.txt",
+      "prompt": "/0f/768c9e18b6/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1071,
+    "cache_creation_tokens": 98065,
+    "cache_read_tokens": 1326708,
+    "output_tokens": 23036,
+    "api_call_count": 26
+  }
+}
